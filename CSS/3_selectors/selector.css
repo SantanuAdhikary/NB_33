@@ -1,0 +1,42 @@
+
+
+/*  1. Tagname Selector */
+
+header{
+    background-color: aqua;
+    height: 450px;
+}
+
+
+/* 2. ID selector */
+
+#topic{
+
+    color:red
+}
+
+/*  3. class name selector */
+
+
+.para{
+    background-color: coral;
+    font-size: 27px;
+    font-style: italic;
+}
+
+
+/* 4.  universal selector  */
+
+
+*{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
+}
+
+
+/*  5. group selector  */
+
+
+h2 , #topic , .para{
+    text-align: center;
+}
