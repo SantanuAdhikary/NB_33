@@ -1,0 +1,109 @@
+
+
+header{
+    background-color: antiquewhite;
+    height: 250px;
+}
+
+.card{
+    height: 200px;
+    width: 200px;
+    background-color: chartreuse;
+}
+
+
+/*  Direct child selector */
+
+
+header > h1{
+    color:blue;
+}
+
+.card > h1{
+    color:red;
+}
+
+header > #para2{
+    background-color: aqua;
+}
+
+
+.card1{
+    height: 400px;
+    width: 600px;
+    background-color: red;
+}
+
+.card1  .box{
+    height: 300px;
+    width: 500px;
+    background-color: blue;
+}
+
+.card1  .box  .container{
+    height: 200px;
+    width: 400px;
+    background-color: yellow;
+}
+
+
+
+.card1  h2{
+    color:green;
+}
+
+
+
+
+main > button{
+    background-color: red;
+}
+
+/*  hover */
+
+main > button:hover{
+    background-color: green;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/*  active  */
+
+
+main > button:active{
+    background-color: blue;
+    color:white;
+    font-weight: bold;
+}
+
+/* nth child  */
+
+main > ol > li:nth-child(2n+1){
+    background-color: red;
+    color:blue;
+}
+
+main > ol > li:nth-child(2n)
+{
+    background-color: gray;
+}
+
+section > p:nth-child(1)
+{
+  background-color: pink;
+}
+
+section > h2:nth-child(2)
+{
+  background-color: brown;
+}
+
+section > h1:nth-child(1)
+{
+  background-color: violet;
+}
+
+section > button:nth-child(7)
+{
+    background-color: aqua;
+}
