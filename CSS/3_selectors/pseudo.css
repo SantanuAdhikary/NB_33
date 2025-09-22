@@ -107,3 +107,75 @@ section > button:nth-child(7)
 {
     background-color: aqua;
 }
+
+
+
+.con > h1{
+   text-align: center;
+   text-transform: capitalize;
+   letter-spacing: 1.4px;
+}
+
+.con > p{
+    font-size: 25px;
+    text-align: justify;
+    text-indent: 60px;
+}
+
+
+/*  Pseudo Element Selector */
+
+
+.con >p::first-letter{
+    font-size: 60px;
+    color:brown
+}
+
+
+.con > p::first-line{
+    background-color: yellow;
+    font-style: italic;
+}
+
+
+.con > h1::before{
+
+    content: "***";
+
+    color:red;
+}
+
+.con > h1::after{
+    content: " !!!";
+    color:green;
+}
+
+
+.con > p::selection{
+    background-color: green;
+    color:white;
+}
+
+.con > ul > li{
+    font-size: 25px;
+}
+
+
+.con > ul > li::marker{
+   color:red;
+}
+
+.con > ul > li:nth-child(2n)::marker
+{
+    color:blue;
+}
+
+
+
+/*  attribute selector */
+
+
+form > input[type= "text"]
+{
+  background-color: green;
+}
