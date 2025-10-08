@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.inner{
+    background-color: white;
+    width: 450px;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+
+.outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+}
+
+.inner > h1{
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    margin-bottom: 8px;
+}
+
+.inner > p{
+    font-size: 19px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+form > label{
+    display: block;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+form > input{
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+form > button{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    background-color: gray;
+    color:white;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.footer{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer > p{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.footer > a{
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+input::placeholder{
+    font-size: 16px;
+    text-align: center;
+}
