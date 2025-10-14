@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Flag</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .orange{
+            height: 33vh;
+            background-color: orange;
+        }
+        .white{
+            height: 34vh;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .green{
+            height: 33vh;
+            background-color: green;
+        }
+        
+        .white > img{
+            height: 90%;
+            transition: all 2s ease-in;
+        }
+
+        .white > img:hover{
+
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="orange"></div>
+    <div class="white">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Ashoka_Chakra.svg" alt="">
+    </div>
+    <div class="green"></div>
+</body>
+</html>
