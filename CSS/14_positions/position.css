@@ -1,0 +1,113 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.outer{
+    height: 100vh;
+    background-image: linear-gradient(red,yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.inner{
+    height: 500px;
+    width: 700px;
+    background-color: white;
+    position: relative;
+}
+
+.inner > #box1{
+    height: 60px;
+    width: 60px;
+    background-color: green;
+   position: absolute;    
+}
+.inner > #box2{
+    height: 70px;
+    width: 70px;
+    background-color: blue;
+    position: absolute;
+    right:0px;  
+}
+.inner > #box3{
+    height: 80px;
+    width: 80px;
+    background-color: pink;
+    position: absolute;
+    bottom: 0px;
+    right:0px;
+}
+.inner > #box4{
+    height: 90px;
+    width: 90px;
+    background-color: brown;
+    position: absolute;
+    bottom: 0;
+    
+    
+}
+.inner > #box5{
+    height: 90px;
+    width: 90px;
+    background-color: chocolate;
+    position: absolute;
+
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+
+
+.outer2{
+    height: 450px;
+    width: 550px;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+
+}
+.inner2{
+    height: 350px;
+    width: 450px;
+    background-color: red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle{
+    height: 300px;
+    width: 350px;
+    background-color: yellow;
+
+    position: relative;
+
+
+}
+
+.card1{
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+
+    position: absolute;
+    right: 0px;
+    top:0px;
+}
+.card2{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+}
