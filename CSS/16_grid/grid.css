@@ -1,0 +1,91 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    /* background-color: rgb(228, 149, 2); */
+    background-image: linear-gradient(yellow,red);
+
+
+    display: grid;
+    /* grid-template-columns: 160px 290px 340px ; */
+
+    /* grid-template-columns: 1fr 2fr 1fr; */
+
+    grid-template-columns: 200px 250px 350px;
+    /* grid-template-rows: 100px 150px 200px 100px; */
+
+    grid-auto-rows: 100px;
+    justify-content: center;
+    align-content: center;
+    gap:10px;
+
+}
+
+.outer > .box{
+    /* border: 2px solid white; */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    color:white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.6);
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+    text-shadow: 1px 2px 2px black;
+}
+
+
+.outer > #box1{
+
+    grid-column: span 3;
+    background-color: brown;
+    color:white;
+}
+
+.outer > #box3{
+    grid-column: span 2;
+    background-color: blueviolet;
+}
+.outer > #box2{
+    grid-row: span 2;
+    background-color: greenyellow;
+}
+.outer > #box8{
+    grid-row: span 2;
+    background-color: rgb(14, 228, 210);
+}
+
+.outer > #box4{
+    background-color: olivedrab;
+    
+}
+.outer > #box5{
+    background-color: black;
+}
+.outer > #box6{
+    background-color: darksalmon;
+}
+.outer > #box7{
+    background-color: indigo;
+}
+.outer > #box9{
+    background-color: chocolate;
+}
+.outer > #box10{
+    background-color: teal;
+}
+
+
+.outer > .box:hover{
+    transform: scale(1.02);
+}
