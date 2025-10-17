@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 300vh;
+    background-image: linear-gradient(orangered,yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.outer > .card1{
+    height: 200px;
+    width: 300px;
+    border: 3px solid white;
+     animation: movingBox 2s ease-in  infinite alternate;
+}
+
+.card1 > .box1{
+    height: 80px;
+    width: 100px;
+    border: 3px solid white;
+    background-color: white;
+   animation: movingBox 2s ease-in  infinite alternate;
+}
+
+@keyframes movingBox {
+    
+    from{
+    }
+    to{
+    transform: translateX(200px);
+    border-radius: 50%;
+    background-color: black;
+    }
+}
+
+
+.card2{
+    height: 250px;
+    width: 350px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotateBox 3s linear infinite;
+    
+}
+
+.card2 > .box2{
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+
+    animation: rotateBox 1s linear infinite;
+}
+
+
+
+@keyframes rotateBox {
+    from{
+
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.card3{
+    height: 250px;
+    width: 300px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card3 > .box3{
+    height: 100px;
+    width: 100px;
+    border-top: 3px solid green;
+    border-radius: 50%;
+    animation: rotateBox 1s linear infinite;
+}
+
+
+.card4{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid white;
+    animation: rotateBox 1s linear infinite ;
+}
+
+.card4 > .box4{
+    height: 100px;
+    width: 100px;
+    border: 3px solid white;
+    border-radius: 50%;     
+}
+
+
+.card5{
+    height: 200px;
+    width: 300px;
+    /* border: 2px solid white; */
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card5 > .c{
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    animation: up_down 2s ease-in infinite alternate;
+}
+
+#c1{
+    background-color: red;
+}
+#c2{
+    background-color: blue;
+    animation-delay: 0.1s;
+}
+#c3{
+    background-color: green;
+    animation-delay: 0.2s;
+}
+#c4{
+    background-color: black;
+    animation-delay: 0.3s;
+}
+#c5{
+    background-color: brown;
+    animation-delay: 0.4s;
+}
+
+
+
+@keyframes up_down {
+    
+    from{
+       transform: translateY(-70px);
+    }
+    to{
+        
+        transform: translateY(70px);
+    }
+}
+
+
+.box9{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    animation: changeColor 1s linear infinite alternate;
+}
+
+
+@keyframes changeColor {
+    
+    from{
+        background-color: black;
+    }
+    to{
+        background-color: white;
+        border-radius: 50%;
+    }
+}
