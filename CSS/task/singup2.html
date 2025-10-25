@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .outer{
+            height: 100vh;
+            background-color: black;
+            position: relative;
+        }
+
+        .upper{
+            height: 50vh;
+            background-color: blue;
+        }
+
+        .lower{
+            height: 50vh;
+            background-color: skyblue;
+        }
+
+        .inner{
+             height: 70vh;
+             width: 80vw;
+             background-color: white;
+             border-radius: 20px;
+             box-shadow: 0px 4px 6px black;
+             position: absolute;
+             top:50%;
+             left:50%;
+             transform: translate(-50%,-50%);
+
+             display: flex;
+        }
+
+        .left{
+            flex-basis: 50%;
+            /* background-color: yellow; */
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:25px;
+        }
+
+        .left > article{
+            /* background-color: red; */
+            width: 60%;
+        }
+
+        article > h1{
+            text-align: center;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        article > form > label{
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1.3px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        article > form > input{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            background-color: #ccc;
+            border-radius: 10px;
+        }
+
+        form > button{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: rgb(51, 51, 225);
+            font-size: 17px;
+            font-weight: bold;
+            color:white;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            border-radius: 10px;
+        }
+
+        .left > p{
+            font-size: 19px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        .left > p > a{
+            text-decoration: none;
+            color:rgb(51, 51, 225);
+        }
+
+        .right{
+            flex-basis: 50%;
+        }
+
+        .right > img{
+            height: 60%;
+            width: 80%;
+            object-fit: cover;
+            object-position: top;
+            margin-bottom: 8px;
+        }
+        .right > h1{
+            text-transform: capitalize;
+            margin-bottom: 8px;
+        }
+
+        .right > p{
+            font-size: 18px;
+            
+        }
+
+
+        footer{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        footer > .line{
+            height: 5px;
+            width: 25%;
+            border-radius: 5px;
+            background-color: rgb(51, 51, 225);
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="outer">
+         <div class="upper"></div>
+         <div class="lower"></div>
+         <div class="inner">
+
+            <div class="left">
+
+                    <article>
+                        <h1> login</h1>
+                        <form action="">
+                            <label for="">enter name</label>
+                            <input type="text">
+                            <label for="">enter password</label>
+                            <input type="text">
+                            <button>login</button>
+                        </form>
+                        
+                    </article>
+                    <p> Don't have an accout ? <a href="">Signup</a> </p>
+                 
+            </div>
+            <div class="right">
+                 <img src="https://media.istockphoto.com/id/1305268276/vector/registration-abstract-concept-vector-illustration.jpg?s=612x612&w=0&k=20&c=nfvUbHjcNDVIPdWkaxGx0z0WZaAEuBK9SyG-aIqg2-0=" alt="">
+
+                 <h1>check your project progress</h1>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quos quia, placeat eligendi numquam maxime exercitationem laborum?</p>
+
+                 <footer>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                 </footer>
+            </div>
+     
+         </div>
+    </div>
+
+    
+</body>
+</html>
