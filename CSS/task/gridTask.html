@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid task</title>
+
+
+    <style>
+        *{
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+        }
+
+        .outer{
+          height: 100vh;
+          background-image: linear-gradient(orangered,yellow);
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap:20px;
+        }
+
+        .outer > .inner{
+          height: 70%;
+          width: 90%;
+          /* background-color: white; */
+
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap:10px;
+
+        }
+
+        .inner > .box{
+          /* border: 2px solid black; */
+          border-radius: 15px;
+
+          box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+          cursor: pointer;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+            background-position: top;
+            transition: all 0.6s ease-in;
+            background-size: cover;
+        }
+
+        .inner > .box > h1{
+          text-transform: uppercase;
+          color:white;
+          letter-spacing: 1.06;
+          text-shadow: 1px 2px 2px black;
+        }
+
+
+        .inner > .box:hover{
+          background-position: center;
+        
+        }
+
+        .inner > #box1{
+          grid-row: span 2;
+          background-image: url("https://images.pexels.com/photos/1699025/pexels-photo-1699025.jpeg");
+        
+        }
+
+        .inner > #box2{
+          background-image: url("https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg");
+        }
+
+        .inner > #box3{
+          background-image: url("https://images.pexels.com/photos/158028/bellingrath-gardens-alabama-landscape-scenic-158028.jpeg");
+        }
+        .inner > #box4{
+          grid-column: span 2;
+          background-image: url("https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg");
+        }
+
+        .inner > #box5{
+          background-image: url("https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg");
+        }
+        .inner > #box6{
+          background-image: url("https://images.pexels.com/photos/33044/sunflower-sun-summer-yellow.jpg");
+        }
+        .inner > #box7{
+          background-image: url("https://images.pexels.com/photos/247373/pexels-photo-247373.jpeg");
+        }
+
+        .outer > h1{
+          text-transform: capitalize;
+          color:white;
+         
+          font-size: 40px;
+          text-shadow: 1px 2px 2px black;
+          position: relative;
+          cursor: pointer;
+
+           animation:up_down 4s ease-in-out infinite;
+          
+        }
+
+        .outer > h1::after{
+          content: "";
+          height: 5px;
+          background-image: linear-gradient(to right,white,black);
+          border-radius: 3px;
+          width: 0%;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transition: width 1s ease-in;
+
+          
+        }
+
+        .outer > h1:hover::after{
+          width: 100%;
+        }
+
+
+        @keyframes up_down {
+          
+            0%{
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            20%{
+               transform: translateY(0);
+               opacity: 1;
+              }
+              80%{
+              transform: translateY(0);
+              opacity: 1;
+
+            }
+            100%{
+              transform: translateY(30px);
+              opacity: 0;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="outer">
+         <h1> grid task</h1>
+         <div class="inner">
+              <div class="box" id="box1">
+                  <h1>mountain</h1>
+              </div>
+              <div class="box" id="box2">
+                <h1>sea</h1>
+              </div>
+              <div class="box" id="box3">
+                <h1>gargen</h1>
+              </div>
+              <div class="box" id="box4">
+                <h1>sunrise</h1>
+              </div>
+              <div class="box" id="box5">
+                <h1>ocean</h1>
+              </div>
+              <div class="box" id="box6">
+                <h1>summer</h1>
+              </div>
+              <div class="box" id="box7">
+                <h1>spring</h1>
+              </div>
+         </div>
+    </div>
+</body>
+</html>
