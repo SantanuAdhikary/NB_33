@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+
+    <style>
+         .card1{
+            background-color: red;
+            height: 150px;
+            width: 150px;
+         }
+
+         .box1{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+         }
+         .box2{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+         }
+         .box3{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin: 0 auto;
+            cursor: pointer;
+         }
+
+
+         .output{
+            border: 2px solid red;
+            height: 100px;
+            width: 300px;
+            margin-bottom: 40px;
+         }
+        
+    </style>
+</head>
+<body>
+    
+    <h1> event </h1>
+
+   
+    <button onclick="display()"> display </button>
+
+
+    <button onclick="show()">show</button>
+    <button onclick="hide()">hide</button>
+    <h2> Hello Everyone , welcome to event session</h2>
+
+    <h3 id="num"> 0 </h3>
+
+    <button onclick="increase()">increase</button>
+    <button onclick="decrease()">decrease</button>
+
+    <div>
+         <button onclick="addRed()">red</button>
+         <button onclick="addGreen()">green</button>
+         <button onclick="addWhite()">white</button>
+         <button ondblclick="addBlack()">black</button>
+    </div>
+
+    <div class="box1" onmouseover="changeColor()" onmouseleave="changeColor2()">
+
+    </div>
+
+
+
+    <button class="btn2" > click me</button>
+
+    <div class="box2">
+
+    </div>
+
+
+    <button onclick="f1()" onclick="f2()">click me</button>
+
+    <button class="btn3">clickme</button>
+
+
+    <div class="box3">
+         <h2 id="c"> 0 </h2>
+    </div>
+
+
+
+  <button class="btn4" > button 4</button>
+
+
+
+  <h2> keyborad event </h2>
+
+  <input type="text">
+  <div class="output"></div>
+
+
+
+    <script src="./event.js"></script>
+</body>
+</html>
