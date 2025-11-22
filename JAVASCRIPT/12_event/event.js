@@ -193,3 +193,19 @@ input.addEventListener("keyup",(e)=>{
 })
 
 
+
+
+
+let inp2 = document.getElementById("inp2")
+
+console.log(inp2)
+
+inp2.addEventListener("keyup",(e)=>{
+
+  console.log(e.target.value)
+  
+  let box = document.getElementById("box1")
+  
+  box.innerHTML = `<h2> ${e.target.value} </h2>`
+  console.log("hi")
+})

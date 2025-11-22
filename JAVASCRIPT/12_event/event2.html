@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> form event</title>
+
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+         }
+
+         .outer{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+         }
+
+         .inner{
+            width: 350px;
+            background-color: white;
+            padding: 20px 40px;
+            border-radius: 20px;
+            box-shadow: 2px 3px 4px black;
+
+         }
+
+         input{
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+            border-radius: 8px;
+            font-size: 18px;
+         }
+
+         label{
+            display: block;
+            margin-bottom: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform:uppercase;
+            letter-spacing: 1.5px;
+         }
+
+         form > button{
+            width: 100%;
+            background-color: rgb(73, 73, 246);
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 16px;
+            color:white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+        }
+        
+        form > button:hover{
+             background-color: rgb(44, 44, 246);
+
+         }
+
+         select{
+            position: absolute;
+            right: 20px;
+            top:10px;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+         }
+
+         ol{
+            margin-left: 40px;
+         }
+    </style>
+</head>
+<body>
+    
+    <div class="outer">
+         
+           <div class="inner">
+                  
+                <form action="">
+
+                    <label for="">enter name</label>
+                    <input type="text" id="sname">
+
+                    <label for="">enter password</label>
+                    <input type="text" id="spass">
+
+                    <button>submit</button>
+                </form>
+           </div>
+
+           <select name="" id="">
+            <option value="">select color</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+           </select>
+    </div>
+
+  
+
+
+    <script src="./event2.js"></script>
+</body>
+</html>
