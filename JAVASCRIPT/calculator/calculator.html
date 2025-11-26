@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+
+    <div class="outer">
+        <h1> calculator</h1>
+         <div class="inner">
+              <input type="text">
+               <div class="row">
+                   <button onclick="clearData()">C</button>
+                   <button onclick="removeChar()"><- </button>
+                   <button onclick="appendData('/')"> /</button>
+                   <button onclick="appendData('*')">X</button>
+               </div>
+               <div class="row">
+                   <button onclick="appendData(7)">7</button>
+                   <button onclick="appendData(8)">8 </button>
+                   <button onclick="appendData(9)">9</button>
+                   <button onclick="appendData('-')">-</button>
+               </div>
+               <div class="row">
+                   <button onclick="appendData(4)">4</button>
+                   <button onclick="appendData(5)">5 </button>
+                   <button onclick="appendData(6)">6</button>
+                   <button onclick="appendData('+')">+</button>
+               </div>
+               <div class="row">
+                   <button onclick="appendData(1)">1</button>
+                   <button onclick="appendData(2)">2 </button>
+                   <button onclick="appendData(3)">3</button>
+                   <button onclick="appendData('%')">%</button>
+               </div>
+               <div class="row">
+                   <button onclick="appendData(0)">0</button>
+                   <button>E </button>
+                   <button onclick="appendData('.')">.</button>
+                   <button onclick="calculate()">=</button>
+               </div>
+         </div>
+    </div>
+    
+
+    <script src="./calculator.js"></script>
+</body>
+</html>
