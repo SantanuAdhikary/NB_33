@@ -63,6 +63,44 @@
             display: flex;
             gap:30px;
          }
+
+         .card{
+            height: 220px;
+            width: 340px;
+            /* border: 2px solid black; */
+            border-radius: 12px;
+            box-shadow: 1px 3px 5px rgba(0,0,0,0.55);
+            background-color: beige;
+            cursor: pointer;
+            transition: all 0.4s ease-in;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+        }
+        
+        .card:hover{
+            transform: scale(1.05);
+            box-shadow: 1px 6px 5px rgba(0,0,0,0.8);
+         }
+
+         main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap:20px;
+            padding-top: 20px;
+            background: linear-gradient(to right,skyblue,#fefefe);
+         }
+
+         img{
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top left;
+         }
     </style>
 
 </head>
@@ -73,12 +111,17 @@
         <input type="text">
          
         <div class="right">
-            <h2> santanu</h2>
+           
             <button>logout</button>
         </div>
+
         
     </nav>
+    
+    <main>
 
+
+    </main>
 
     <script src="./home.js"></script>
 </body>

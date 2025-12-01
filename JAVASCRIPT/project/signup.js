@@ -19,6 +19,8 @@ form.addEventListener("submit",(e)=>{
     localStorage.setItem("signupPass",userpass)
 
     alert("signup done successfully")
+
+    open("./login.html")
 })
 
 
