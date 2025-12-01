@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+         }
+
+         nav{
+            height: 80px;
+            background-color: #212121;
+            color:white;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:25px;
+            padding:0px 40px;
+         }
+
+         .right > button{
+            padding: 10px 20px;
+            background-color: orange;
+            color:white;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1.7px;
+         }
+
+         .right > button:hover{
+            background-color: orangered;
+         }
+
+         nav > h2{
+            font-style: italic;
+            letter-spacing: 1.5px;
+         }
+
+         nav > input{
+            padding: 8px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            font-size: 17px;
+            letter-spacing: 1.4px;
+            font-weight: bold;
+         }
+
+         nav > input:focus{
+            border: 2px solid orangered;
+         }
+
+         .right{
+            display: flex;
+            gap:30px;
+         }
+    </style>
+
+</head>
+<body>
+    
+    <nav>
+
+        <input type="text">
+         
+        <div class="right">
+            <h2> santanu</h2>
+            <button>logout</button>
+        </div>
+        
+    </nav>
+
+
+    <script src="./home.js"></script>
+</body>
+</html>
